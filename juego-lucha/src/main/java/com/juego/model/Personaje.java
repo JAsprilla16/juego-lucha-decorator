@@ -1,3 +1,4 @@
+package com.juego.model;
 import java.util.Random;
 
 public class Personaje implements ICombatiente {

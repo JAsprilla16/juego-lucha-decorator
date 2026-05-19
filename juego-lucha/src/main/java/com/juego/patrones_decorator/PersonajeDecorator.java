@@ -1,3 +1,6 @@
+package com.juego.patrones_decorator;
+import com.juego.model.ICombatiente;
+
 public abstract class PersonajeDecorator implements ICombatiente {
     protected ICombatiente personaje;
 

@@ -1,4 +1,6 @@
+package com.juego.patrones_decorator;
 import java.util.Random;
+import com.juego.model.ICombatiente;
 
 public class EscudoDecorator extends PersonajeDecorator {
 

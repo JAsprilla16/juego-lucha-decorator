@@ -1,3 +1,5 @@
+package com.juego.patrones_decorator;
+import com.juego.model.ICombatiente;
 import java.util.Random;
 
 public class SuperPoderDecorator extends PersonajeDecorator {

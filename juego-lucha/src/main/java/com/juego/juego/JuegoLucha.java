@@ -1,3 +1,10 @@
+package com.juego.juego;
+import com.juego.model.ICombatiente;
+import com.juego.model.Personaje;
+import com.juego.patrones_decorator.SuperPoderDecorator;
+import com.juego.patrones_decorator.EscudoDecorator;
+import com.juego.patrones_decorator.EspadaDecorator;
+
 public class JuegoLucha {
     public static void main(String[] args) {
 
