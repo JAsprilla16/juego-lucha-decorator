@@ -1,0 +1,16 @@
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/juego/JuegoLucha.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/juego/Main.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/model/ICombatiente.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/model/Personaje.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/decorator/EscudoDecorator.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/decorator/EspadaDecorator.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/decorator/PersonajeDecorator.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/decorator/SuperPoderDecorator.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/factory/GuerreroFactory.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/factory/MagoFactory.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/factory/NinjaFactory.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/factory/PersonajeFactory.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/strategy/AgresivoStrategy.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/strategy/CriticoStrategy.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/strategy/DefensivoStrategy.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/strategy/EstrategiaAtaque.java

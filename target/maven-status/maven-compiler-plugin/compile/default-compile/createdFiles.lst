@@ -1,0 +1,16 @@
+com/juego/model/ICombatiente.class
+com/juego/patrones/factory/MagoFactory.class
+com/juego/patrones/decorator/PersonajeDecorator.class
+com/juego/patrones/factory/PersonajeFactory.class
+com/juego/patrones/strategy/CriticoStrategy.class
+com/juego/model/Personaje.class
+com/juego/patrones/factory/GuerreroFactory.class
+com/juego/patrones/strategy/EstrategiaAtaque.class
+com/juego/patrones/strategy/AgresivoStrategy.class
+com/juego/juego/JuegoLucha.class
+com/juego/patrones/factory/NinjaFactory.class
+com/juego/patrones/decorator/EscudoDecorator.class
+com/juego/juego/Main.class
+com/juego/patrones/decorator/SuperPoderDecorator.class
+com/juego/patrones/strategy/DefensivoStrategy.class
+com/juego/patrones/decorator/EspadaDecorator.class
