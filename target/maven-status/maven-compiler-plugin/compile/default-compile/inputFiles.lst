@@ -2,6 +2,7 @@
 /workspaces/juego-lucha-decorator/src/main/java/com/juego/juego/Main.java
 /workspaces/juego-lucha-decorator/src/main/java/com/juego/model/ICombatiente.java
 /workspaces/juego-lucha-decorator/src/main/java/com/juego/model/Personaje.java
+/workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/builder/PersonajeBuilder.java
 /workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/decorator/EscudoDecorator.java
 /workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/decorator/EspadaDecorator.java
 /workspaces/juego-lucha-decorator/src/main/java/com/juego/patrones/decorator/PersonajeDecorator.java

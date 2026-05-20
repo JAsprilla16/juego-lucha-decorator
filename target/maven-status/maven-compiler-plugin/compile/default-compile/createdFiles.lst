@@ -8,6 +8,7 @@ com/juego/patrones/factory/GuerreroFactory.class
 com/juego/patrones/strategy/EstrategiaAtaque.class
 com/juego/patrones/strategy/AgresivoStrategy.class
 com/juego/juego/JuegoLucha.class
+com/juego/patrones/builder/PersonajeBuilder.class
 com/juego/patrones/factory/NinjaFactory.class
 com/juego/patrones/decorator/EscudoDecorator.class
 com/juego/juego/Main.class
