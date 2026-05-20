@@ -1,0 +1,7 @@
+com/juego/patrones/builder/BuilderTest.class
+com/juego/patrones/decorator/SuperPoderDecoratorTest.class
+com/juego/model/PersonajeTest.class
+com/juego/patrones/decorator/EspadaDecoratorTest.class
+com/juego/model/AtaqueTest.class
+com/juego/patrones/factory/FactoryTest.class
+com/juego/patrones/decorator/EscudoDecoratorTest.class

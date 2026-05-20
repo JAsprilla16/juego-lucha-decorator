@@ -1,0 +1,7 @@
+/workspaces/juego-lucha-decorator/src/test/java/com/juego/model/AtaqueTest.java
+/workspaces/juego-lucha-decorator/src/test/java/com/juego/model/PersonajeTest.java
+/workspaces/juego-lucha-decorator/src/test/java/com/juego/patrones/builder/BuilderTest.java
+/workspaces/juego-lucha-decorator/src/test/java/com/juego/patrones/decorator/EscudoDecoratorTest.java
+/workspaces/juego-lucha-decorator/src/test/java/com/juego/patrones/decorator/EspadaDecoratorTest.java
+/workspaces/juego-lucha-decorator/src/test/java/com/juego/patrones/decorator/SuperPoderDecoratorTest.java
+/workspaces/juego-lucha-decorator/src/test/java/com/juego/patrones/factory/FactoryTest.java
