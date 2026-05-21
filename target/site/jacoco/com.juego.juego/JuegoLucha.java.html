@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>JuegoLucha.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">juego-lucha</a> &gt; <a href="index.source.html" class="el_package">com.juego.juego</a> &gt; <span class="el_source">JuegoLucha.java</span></div><h1>JuegoLucha.java</h1><pre class="source lang-java linenums">package com.juego.juego;
+
+import java.util.Scanner;
+
+import com.juego.model.ICombatiente;
+
+import com.juego.patrones.decorator.EspadaDecorator;
+import com.juego.patrones.decorator.EscudoDecorator;
+import com.juego.patrones.decorator.SuperPoderDecorator;
+
+import com.juego.patrones.factory.GuerreroFactory;
+import com.juego.patrones.factory.NinjaFactory;
+import com.juego.patrones.factory.MagoFactory;
+import com.juego.patrones.factory.PersonajeFactory;
+
+<span class="nc" id="L16">public class JuegoLucha {</span>
+
+    public static void main(String[] args) {
+
+<span class="fc" id="L20">        Scanner scanner = new Scanner(System.in);</span>
+
+<span class="fc" id="L22">        System.out.println(&quot;===== JUEGO DE LUCHA =====&quot;);</span>
+<span class="fc" id="L23">        System.out.println(&quot;1. Guerrero&quot;);</span>
+<span class="fc" id="L24">        System.out.println(&quot;2. Ninja&quot;);</span>
+<span class="fc" id="L25">        System.out.println(&quot;3. Mago&quot;);</span>
+
+        // Selección jugador 1
+<span class="fc" id="L28">        System.out.print(&quot;Jugador 1 elige personaje: &quot;);</span>
+<span class="fc" id="L29">        int opcion1 = scanner.nextInt();</span>
+
+        // Selección jugador 2
+<span class="fc" id="L32">        System.out.print(&quot;Jugador 2 elige personaje: &quot;);</span>
+<span class="fc" id="L33">        int opcion2 = scanner.nextInt();</span>
+
+        // Crear personajes usando Factory
+<span class="fc" id="L36">        ICombatiente jugador1 =</span>
+<span class="fc" id="L37">            crearPersonaje(opcion1);</span>
+
+<span class="fc" id="L39">        ICombatiente jugador2 =</span>
+<span class="fc" id="L40">            crearPersonaje(opcion2);</span>
+
+<span class="fc" id="L42">        System.out.println(&quot;\n¡Comienza la batalla!&quot;);</span>
+<span class="fc" id="L43">        System.out.println(jugador1.getNombre()</span>
+                + &quot; VS &quot;
+<span class="fc" id="L45">                + jugador2.getNombre());</span>
+
+<span class="fc" id="L47">        System.out.println(&quot;----------------------&quot;);</span>
+
+        // Combate
+<span class="pc bpc" id="L50" title="1 of 2 branches missed.">        while (jugador1.estaVivo()</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">                &amp;&amp; jugador2.estaVivo()) {</span>
+
+<span class="fc" id="L53">            jugador1.atacar(jugador2);</span>
+
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            if (jugador2.estaVivo()) {</span>
+<span class="fc" id="L56">                jugador2.atacar(jugador1);</span>
+            }
+
+<span class="fc" id="L59">            System.out.println(&quot;HP &quot;</span>
+<span class="fc" id="L60">                    + jugador1.getNombre()</span>
+                    + &quot;: &quot;
+<span class="fc" id="L62">                    + jugador1.getPuntosDeVida());</span>
+
+<span class="fc" id="L64">            System.out.println(&quot;HP &quot;</span>
+<span class="fc" id="L65">                    + jugador2.getNombre()</span>
+                    + &quot;: &quot;
+<span class="fc" id="L67">                    + jugador2.getPuntosDeVida());</span>
+
+<span class="fc" id="L69">            System.out.println(&quot;----------------------&quot;);</span>
+        }
+
+        // Ganador
+<span class="pc bpc" id="L73" title="1 of 2 branches missed.">        if (jugador1.estaVivo()) {</span>
+<span class="fc" id="L74">            System.out.println(&quot;🏆 &quot;</span>
+<span class="fc" id="L75">                    + jugador1.getNombre()</span>
+                    + &quot; gana!&quot;);
+        } else {
+<span class="nc" id="L78">            System.out.println(&quot;🏆 &quot;</span>
+<span class="nc" id="L79">                    + jugador2.getNombre()</span>
+                    + &quot; gana!&quot;);
+        }
+
+<span class="fc" id="L83">        scanner.close();</span>
+<span class="fc" id="L84">    }</span>
+
+    // Método para crear personajes
+    private static ICombatiente crearPersonaje(int opcion) {
+
+        PersonajeFactory factory;
+
+<span class="pc bpc" id="L91" title="2 of 4 branches missed.">        switch (opcion) {</span>
+
+            case 1:
+<span class="fc" id="L94">                factory = new GuerreroFactory();</span>
+
+<span class="fc" id="L96">                return</span>
+                    new EscudoDecorator(
+                        new EspadaDecorator(
+<span class="fc" id="L99">                            factory.crearPersonaje()</span>
+                        )
+                    );
+
+            case 2:
+<span class="fc" id="L104">                factory = new NinjaFactory();</span>
+
+<span class="fc" id="L106">                return new SuperPoderDecorator(</span>
+                    new EspadaDecorator(
+<span class="fc" id="L108">                        factory.crearPersonaje()</span>
+                    )
+                );
+
+            case 3:
+<span class="nc" id="L113">                factory = new MagoFactory();</span>
+
+<span class="nc" id="L115">                return new SuperPoderDecorator(</span>
+                    new EscudoDecorator(
+<span class="nc" id="L117">                        factory.crearPersonaje()</span>
+                    )
+                );
+
+            default:
+<span class="nc" id="L122">                System.out.println(&quot;Opción inválida. Se asigna Guerrero.&quot;);</span>
+
+<span class="nc" id="L124">                factory = new GuerreroFactory();</span>
+
+<span class="nc" id="L126">                return factory.crearPersonaje();</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

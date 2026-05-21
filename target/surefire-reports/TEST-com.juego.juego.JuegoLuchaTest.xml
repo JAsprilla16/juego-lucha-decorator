@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.juego.juego.JuegoLuchaTest" time="0.035" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspaces/juego-lucha-decorator/target/test-classes:/workspaces/juego-lucha-decorator/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/home/codespace/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/home/codespace/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/home/codespace/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/home/codespace/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/opt/java/11.0.14/lib"/>
+    <property name="sun.java.command" value="/workspaces/juego-lucha-decorator/target/surefire/surefirebooter-20260521000114663_3.jar /workspaces/juego-lucha-decorator/target/surefire 2026-05-21T00-01-14_463-jvmRun1 surefire-20260521000114663_1tmp surefire_0-20260521000114663_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/workspaces/juego-lucha-decorator/target/test-classes:/workspaces/juego-lucha-decorator/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/home/codespace/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/home/codespace/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/home/codespace/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/home/codespace/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/codespace"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-02-08"/>
+    <property name="java.home" value="/opt/java/11.0.14"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspaces/juego-lucha-decorator"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/workspaces/juego-lucha-decorator/target/surefire/surefirebooter-20260521000114663_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14.1+1-LTS"/>
+    <property name="user.name" value="codespace"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-1044-azure"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-31205"/>
+    <property name="localRepository" value="/home/codespace/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.14.1"/>
+    <property name="user.dir" value="/workspaces/juego-lucha-decorator"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="11.0.14.1+1-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="mainDebeEjecutarseSinErrores" classname="com.juego.juego.JuegoLuchaTest" time="0.021">
+    <system-out><![CDATA[===== JUEGO DE LUCHA =====
+1. Guerrero
+2. Ninja
+3. Mago
+Jugador 1 elige personaje: Jugador 2 elige personaje: 
+¡Comienza la batalla!
+Guerrero VS Ninja
+----------------------
+Guerrero ataca causando 22
+Guerrero intenta usar espada pero falla
+Guerrero no logró activar escudo
+Ninja ataca causando 18
+Guerrero no logró activar escudo
+Ninja activa espada (+10 daño)
+HP Guerrero: 117
+HP Ninja: 78
+----------------------
+Guerrero ataca causando 16
+Guerrero intenta usar espada pero falla
+Guerrero activa escudo (-5 daño)
+Ninja ataca causando 33
+Guerrero no logró activar escudo
+Ninja activa espada (+10 daño)
+HP Guerrero: 104
+HP Ninja: 72
+----------------------
+Guerrero ataca causando 22
+Guerrero intenta usar espada pero falla
+Ninja activa SUPER PODER: STUN!
+💥 ¡Golpe crítico!
+Guerrero activa escudo (-5 daño)
+Ninja ataca causando 56
+Ninja intenta usar espada pero falla
+HP Guerrero: 68
+HP Ninja: 60
+----------------------
+Guerrero ataca causando 32
+Guerrero intenta usar espada pero falla
+💥 ¡Golpe crítico!
+Guerrero activa escudo (-5 daño)
+Ninja ataca causando 62
+Ninja intenta usar espada pero falla
+HP Guerrero: 26
+HP Ninja: 38
+----------------------
+Guerrero ataca causando 20
+Guerrero activa espada (+10 daño)
+Guerrero no logró activar escudo
+Ninja ataca causando 30
+Guerrero no logró activar escudo
+Ninja activa espada (+10 daño)
+HP Guerrero: 11
+HP Ninja: 28
+----------------------
+Guerrero ataca causando 32
+Guerrero intenta usar espada pero falla
+Ninja activa SUPER PODER: CURACIÓN +20
+Guerrero no logró activar escudo
+Ninja ataca causando 21
+Guerrero activa escudo (-5 daño)
+Ninja activa espada (+10 daño)
+HP Guerrero: 5
+HP Ninja: 6
+----------------------
+Guerrero ataca causando 30
+Guerrero intenta usar espada pero falla
+HP Guerrero: 5
+HP Ninja: 0
+----------------------
+🏆 Guerrero gana!
+]]></system-out>
+  </testcase>
+</testsuite>
